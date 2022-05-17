@@ -148,5 +148,4 @@ C:\Users\filip\source\repos\CRUD-Caminhoes\CRUD-Caminhoes\bin\Debug\netcoreapp3.
 C:\Users\filip\source\repos\CRUD-Caminhoes\CRUD-Caminhoes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\filip\source\repos\CRUD-Caminhoes\CRUD-Caminhoes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\filip\source\repos\CRUD-Caminhoes\CRUD-Caminhoes\obj\Debug\netcoreapp3.1\Razor\Views\Trucks\Index.cshtml.g.cs
-C:\Users\filip\source\repos\CRUD-Caminhoes\CRUD-Caminhoes\obj\Debug\netcoreapp3.1\Razor\Views\Trucks\Edit.cshtml.g.cs
 C:\Users\filip\source\repos\CRUD-Caminhoes\CRUD-Caminhoes\obj\Debug\netcoreapp3.1\Razor\Views\Trucks\AddOrEdit.cshtml.g.cs

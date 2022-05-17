@@ -1,0 +1,43 @@
+﻿@model CRUD_Caminhoes.Models.Trucks
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h4>Editar ou Adicionar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="truckId"/>
+            <div class="form-group">
+                <label asp-for="truckName" class="control-label"></label>
+                <input asp-for="truckName" class="form-control" />
+                <span asp-validation-for="truckName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="truckDescription" class="control-label"></label>
+                <input asp-for="truckDescription" class="form-control" />
+                <span asp-validation-for="truckDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="truckCreationDate" class="control-label"></label>
+                @*<input asp-for="truckCreationDate" class="form-control" />*@
+                <input asp-for="truckCreationDate" class="form-control" type="date" />
+                <span asp-validation-for="truckCreationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar para o Dashboard</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

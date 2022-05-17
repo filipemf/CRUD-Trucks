@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CRUD_Caminhoes.Models.Trucks>
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="AddOrEdit">Adicionar Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.truckId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.truckName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.truckDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.truckCreationDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.truckId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.truckName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.truckDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.truckCreationDate)
+            </td>
+            <td>
+                <a asp-action="AddOrEdit" asp-route-id="@item.truckId">Edit</a> |
+                @*<a asp-action="Details" asp-route-id="@item.truckId">Details</a> |*@
+                <a asp-action="Delete" onclick="return confirm('Deleter o registro?')" asp-route-id="@item.truckId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

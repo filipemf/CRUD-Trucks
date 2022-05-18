@@ -9,7 +9,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="AddOrEdit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger" id="formDiv"></div>
             <input type="hidden" asp-for="truckId"/>
             <div class="form-group">
                 <label asp-for="truckName" class="control-label"></label>
